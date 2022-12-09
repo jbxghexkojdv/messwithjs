@@ -43,3 +43,20 @@ div
   left: 0;
   top: 0;
 }
+
+iframe
+{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#css-tab,
+#js-tab,
+#console-tab,
+#page-tab
+{
+  display: none;
+}
