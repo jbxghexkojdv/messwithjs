@@ -4,6 +4,10 @@ button
   position: absolute;
   top: 0;
   height: 10%;
+  border: 0px solid black;
+  font-size: 50px;
+  background-color: white;
+  font-family: monospace;
 }
 
 #html-tab-button
