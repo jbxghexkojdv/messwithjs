@@ -3,6 +3,12 @@ body
   background-color: black;
 }
 
+input
+{
+  position: absolute;
+  top: -100000000000000000000%;
+}
+
 button
 {
   width: 20%;
