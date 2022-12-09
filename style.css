@@ -1,1 +1,41 @@
+button
+{
+  width: 20%;
+  position: absolute;
+  top: 0;
+  height: 10%;
+}
 
+#html-tab-button
+{
+  left: 0;
+}
+
+#css-tab-button
+{
+  left: 20%;
+}
+
+#js-tab-button
+{
+  left: 40%;
+}
+
+#console-tab-button
+{
+  left: 60%;
+}
+
+#page-tab-button
+{
+  left: 80%;
+}
+
+div
+{
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
