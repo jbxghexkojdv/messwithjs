@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <p id="code"></p>
     <button id="html-tab-button" onclick="changeTab('html')">HTML</button>
     <div id="html-tab">
       <input type="text" id="html-code" />
@@ -23,7 +24,7 @@
     </div>
     <button id="page-tab-button" onclick="changeTab('page')">Result</button>
     <div id="page-tab">
-      <iframe src="./iframe.html"></iframe>
+      <iframe src="./iframe.html" id="pageCreated"></iframe>
     </div>
     <script src="script.js"></script>
   </body>
