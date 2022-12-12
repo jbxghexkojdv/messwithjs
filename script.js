@@ -1,15 +1,5 @@
 let currentTab = document.getElementById("html-tab");
 
-let code = {
-            html: "", 
-            css: "",
-            js: "",
-            console: "",
-            get htu(){return this.html.slice(this.html.indexOf("<html>")+6, this.html.indexOf("</html>"))}
-           };
-
-
-
 function changeTab(tab)
 {
   if(currentTab.id == tab + "-tab")
