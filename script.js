@@ -42,11 +42,11 @@ document.getElementById("code").onclick = function()
 
 for(let i = 0; i < 4; i++)
 {
-  document.getElementsByTagName("input")[i].oninput = function()
+  document.getElementsByTagName("textarea")[i].oninput = function()
   {
-    if(document.getElementsByTagName("input")[i].parentElement == currentTab)
+    if(document.getElementsByTagName("textarea")[i].parentElement == currentTab)
     {
-      document.getElementById("code").innerHTML = document.getElementsByTagName("input")[i].value;
+      document.getElementById("code").innerHTML = document.getElementsByTagName("textarea")[i].value;
     }
   };
 }
