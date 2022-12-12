@@ -27,6 +27,11 @@ button
   font-size: 11px;
   color: white;
   font-family: monospace;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 90%;
+  width: 100%;
 }
 
 #html-tab-button
