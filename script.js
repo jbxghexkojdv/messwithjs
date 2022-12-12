@@ -26,7 +26,7 @@ function changeTab(tab)
   if(currentTab == document.getElementById("page-tab"))
   {
     document.getElementById("code").style.display = "none";
-    document.getElementbyId("pageCreated").contentWindow.
+    document.getElementbyId("pageCreated").contentWindow.  // next line is inside the iframe
       document.getElementsByTagName("html")[0].innerHTML = code.htu;
   }
   else
@@ -35,7 +35,18 @@ function changeTab(tab)
   }
 }
 
-document.getElementById("code").onclick = function(){
-
+document.getElementById("code").onclick = function()
+{
   document.getElementById(currentTab.id != "console-tab" && currentTab.id != "page-tab" ? currentTab.id.slice(0, -4) : currentTab.id == "consoleTab" ? "console" : "i am under the water").focus();
 };
+
+for(let i = 0; i < 4; i++)
+{
+  document.getElementsByTagName("input")[i].oninput = function()
+  {
+    if(document.getElementsByTagName("input")[i].parentElement == currentTab)
+    {
+      document.getElementById("code").innerHTML = document.getElementsByTagName("input")[i].value;
+    }
+  };
+}
