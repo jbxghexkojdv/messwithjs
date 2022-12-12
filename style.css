@@ -3,7 +3,7 @@ body
   background-color: black;
 }
 
-input
+textarea
 {
   position: absolute;
   top: -100000000000000000000%;
