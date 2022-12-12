@@ -17,7 +17,7 @@ function changeTab(tab)
   {
     document.getElementById("code").style.display = "none";
     document.getElementbyId("pageCreated").contentWindow.  // next line is inside the iframe
-      document.getElementsByTagName("html")[0].innerHTML = code.htu;
+      document.getElementsByTagName("html")[0].innerHTML = document.getElementById("html-code").value.slice(this.html.indexOf("<html>")+6, this.html.indexOf("</html>"));
   }
   else
   {
