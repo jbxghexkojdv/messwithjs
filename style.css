@@ -6,7 +6,10 @@ body
 textarea
 {
   position: absolute;
-  top: -100000000000000000000%;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 0;
 }
 
 button
