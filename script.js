@@ -27,19 +27,16 @@ function changeTab(tab)
   {
     document.getElementbyId("pageCreated").contentWindow.  // next line is inside the iframe
       document.getElementsByTagName("html")[0].innerHTML = document.getElementById("html-code").value.slice(this.html.indexOf("<html>")+6, this.html.indexOf("</html>"));
-    console.log(document.getElementById("html-code").value.slice(this.html.indexOf("<html>")+6, this.html.indexOf("</html>")));
+      let s = document.getElementbyId("pageCreated").contentWindow.
+          document.createElement("script");
     document.getElementbyId("pageCreated").contentWindow.
-      document.getElementsByTagName("body")[0].appendChild(
-        s = document.getElementbyId("pageCreated").contentWindow.
-          document.createElement("script")
-      );
+      document.getElementsByTagName("body")[0].appendChild(s);
     s.innerHTML = document.getElementById("js-code").value;
-    
+
+    s = document.getElementbyId("pageCreated").contentWindow.
+          document.createElement("style");
     document.getElementbyId("pageCreated").contentWindow.
-      document.getElementsByTagName("head")[0].appendChild(
-        s = document.getElementbyId("pageCreated").contentWindow.
-          document.createElement("style")
-      );
+      document.getElementsByTagName("head")[0].appendChild(s);
     s.innerHTML = document.getElementById("css-code").value;
   }
 }
