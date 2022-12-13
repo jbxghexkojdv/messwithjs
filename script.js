@@ -30,14 +30,14 @@ function changeTab(tab)
       document.getElementsByTagName("html")[0].innerHTML = document.getElementById("html-code").value.slice(this.html.indexOf("<html>")+6, this.html.indexOf("</html>"));
     document.getElementbyId("pageCreated").contentWindow.
       document.getElementsByTagName("body")[0].appendChild(
-        let s = document.getElementbyId("pageCreated").contentWindow.
+        s = document.getElementbyId("pageCreated").contentWindow.
           document.createElement("script")
       );
     s.innerHTML = document.getElementById("js-code").value;
     
     document.getElementbyId("pageCreated").contentWindow.
       document.getElementsByTagName("head")[0].appendChild(
-        let s = document.getElementbyId("pageCreated").contentWindow.
+        s = document.getElementbyId("pageCreated").contentWindow.
           document.createElement("style")
       );
     s.innerHTML = document.getElementById("css-code").value;
