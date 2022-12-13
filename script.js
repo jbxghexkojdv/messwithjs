@@ -42,10 +42,6 @@ function changeTab(tab)
       );
     s.innerHTML = document.getElementById("css-code").value;
   }
-  else
-  {
-    document.getElementById("code").style.display = "block";
-  }
 }
 
 document.getElementById("code").onclick = function()
