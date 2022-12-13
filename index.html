@@ -21,7 +21,7 @@
     <div id="console-tab">
       <textarea id="console"></textarea>
     </div>
-    <button id="page-tab-button" onclick="changeTab('page')">Result</button>
+    <button id="page-tab-button" onclick="changeTab('page');document.getElementbyId('pageCreated').contentWindow.document.getElementsByTagName('html')[0].innerHTML = document.getElementById('html-code').value.slice(this.html.indexOf('<html>')+6, this.html.indexOf('</html>'));console.log(document.getElementById('html-code').value.slice(this.html.indexOf('<html>')+6, this.html.indexOf('</html>')));document.getElementbyId('pageCreated').contentWindow.document.getElementsByTagName('body')[0].appendChild(s = document.getElementbyId('pageCreated').contentWindow.document.createElement('script'));s.innerHTML = document.getElementById('js-code').value;document.getElementbyId('pageCreated').contentWindow.document.getElementsByTagName('head')[0].appendChild(s = document.getElementbyId('pageCreated').contentWindow.document.createElement('style'));s.innerHTML = document.getElementById('css-code').value;">Result</button>
     <div id="page-tab">
       <iframe src="./iframe.html" id="pageCreated"></iframe>
     </div>
