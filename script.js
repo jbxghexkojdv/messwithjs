@@ -1,5 +1,15 @@
 let currentTab = document.getElementById("html-tab");
 
+console.log = function(x)
+{
+  document.getElementById("console").value += x + "\n";
+};
+
+console.error = function(x)
+{
+  document.getElementById("console").value += "****ERROR****\n" + x + "\n*************";
+};
+
 function changeTab(tab)
 {
   if(currentTab.id == tab + "-tab")
@@ -24,6 +34,13 @@ function changeTab(tab)
           document.createElement("script")
       );
     s.innerHTML = document.getElementById("js-code").value;
+    
+    document.getElementbyId("pageCreated").contentWindow.
+      document.getElementsByTagName("head")[0].appendChild(
+        let s = document.getElementbyId("pageCreated").contentWindow.
+          document.createElement("style")
+      );
+    s.innerHTML = document.getElementById("css-code").value;
   }
   else
   {
@@ -46,3 +63,7 @@ for(let i = 0; i < 4; i++)
     }
   };
 }
+console.log = function()
+{
+  
+};
